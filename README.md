@@ -133,8 +133,6 @@ return [
         'php5',
     ],
 
-    'send_email_notification' => env('SUSPICIOUS_FILES_SEND_EMAIL', false),
-
     'email' => [
         'notification_email_address' => env('SUSPICIOUS_FILES_EMAIL', ''),
         'subject' => '⚠ SECURITY ALERT: suspicious files detected',

@@ -185,9 +185,10 @@ class SuspiciousFilesFind extends Command
      */
     protected function sendEmailNotification(array $files): void
     {
-        if ( ! config('suspicious-files.send_email_notification')) {
+        if ( ! config('suspicious-files.email.notification_email_address')) {
             $this->error('✗ Notification email not configured.');
             Log::error('Notification email for suspicious files not configured.');
+            return;
         }
 
         try {

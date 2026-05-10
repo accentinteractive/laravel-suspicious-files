@@ -47,11 +47,6 @@ return [
     ],
 
     /**
-     * Whether to send email notifications when suspicious files are detected.
-     */
-    'send_email_notification' => env('SUSPICIOUS_FILES_SEND_EMAIL', false),
-
-    /**
      * Email settings
      */
     'email' => [

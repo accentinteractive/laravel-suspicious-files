@@ -2,6 +2,11 @@
 
 All notable changes to `laravel-suspicious-files` will be documented in this file.
 
+## [0.0.2] - 2026-05-10
+
+### Removed
+- Removed send_email_notification in config because it is already a flag
+
 ## [0.0.1] - 2026-05-10
 
 ### Added

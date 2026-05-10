@@ -49,7 +49,6 @@ class SuspiciousFilesTest extends TestCase
         Config::set('suspicious-files.excluded_directories', []);
         Config::set('suspicious-files.allowed_files', ['index.php']);
         Config::set('suspicious-files.suspicious_file_extensions', ['php']);
-        Config::set('suspicious-files.send_email_notification', false);
     }
 
     public function test_command_is_registered(): void
